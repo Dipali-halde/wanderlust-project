@@ -28,7 +28,8 @@ const { Server } = require("http");
 
 
 //MOGODB ATLUS Server
-const dbUrl = process.env.ATLAS_URL;
+
+const dbUrl= process.env.ATLASDB_URL;
 
 main()
 .then(() => {
@@ -64,7 +65,7 @@ store.on("error", () => {
 
 const sessionOptions = {
     store,
-    secret: process.env.SECRET,
+    secret:process.env.SECRET,
     resave: false, 
     saveUninitialized: true,
 };
