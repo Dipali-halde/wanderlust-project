@@ -1,4 +1,4 @@
-
+//controller for listings 
 const Listing = require("../models/listing"); 
 
 
